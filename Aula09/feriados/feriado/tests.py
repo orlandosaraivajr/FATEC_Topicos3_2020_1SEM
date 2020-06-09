@@ -10,10 +10,10 @@ class NatalTest(TestCase):
         self.assertEqual(200, self.resp.status_code)
 
     def test_texto(self):
-        self.assertContains(self.resp, 'Natal')
+        self.assertContains(self.resp, 'Feriado')
 
     def test_template_usado(self):
-        self.assertTemplateUsed(self.resp, 'natal.html')
+        self.assertTemplateUsed(self.resp, 'feriados.html')
 
 
 class FeriadoModelTest(TestCase):
